@@ -2,7 +2,7 @@ import { TechCoefficientComponent } from './tech-coefficient/tech-coefficient.co
 import { SoftwareValueComponent } from './software-value/software-value.component';
 import { EnviromentCoefficientComponent } from './enviroment-coefficient/enviroment-coefficient.component';
 import { ActorService } from './../providers/actor-service';
-import { Http} from '@angular/http';
+// import { Http} from '@angular/http';
 import { Component } from '@angular/core';
 import { ActorComponent } from './actor/actor.component';
 import { UseCaseComponent } from './use-case/use-case.component'

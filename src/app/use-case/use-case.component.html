@@ -23,27 +23,30 @@
 							<td></td>
 							<td>Đơn giản</td>
 							<td>						
-							    <input type="text" class="form-control tbl4" id="case_number1">							
+							    <input type="text" class="form-control" (input)="caseNumber1 = $event.target.value">							
 							</td>
-							<td id="case_point1">								
+							<td id="case_point1">	
+								<input type="text" disabled class="form-control" value = {{caseNumber1*5}}>								
 							</td>
 						</tr>
 						<tr>
 							<td></td>
 							<td>Trung bình</td>
 							<td>								
-							    <input type="text" class="form-control tbl4" id="case_number2">						
+							    <input type="text" class="form-control " (input)="caseNumber2 = $event.target.value">						
 							</td>
-							<td id="case_point2">											
+							<td id="case_point2">
+								<input type="text" disabled class="form-control" value = {{caseNumber2*10}}>												
 							</td>
 						</tr>
 						<tr>
 							<td></td>
 							<td>Phức tạp</td>
 							<td>							
-							    <input type="text" class="form-control tbl4" id="case_number3">						
+							    <input type="text" class="form-control " (input)="caseNumber3 = $event.target.value">						
 							</td>
-							<td id="case_point3">						
+							<td id="case_point3">	
+								<input type="text" disabled class="form-control" value = {{caseNumber3*15}}>						
 							</td>
 						</tr>
 						<tr class="danger">
@@ -58,27 +61,30 @@
 							<td></td>
 							<td>Đơn giản</td>
 							<td>							
-							    <input type="text" class="form-control tbl4" id="case_number4">						
+							    <input type="text" class="form-control tbl4" (input)="caseNumber4 = $event.target.value">						
 							</td>
-							<td id="case_point4">						
+							<td id="case_point4">
+								<input type="text" disabled class="form-control" value = {{caseNumber4*5*1.2}}>						
 							</td>
 						</tr>
 						<tr>
 							<td></td>
 							<td>Trung bình</td>
 							<td>							
-							    <input type="text" class="form-control tbl4" id="case_number5">						
+							    <input type="text" class="form-control tbl4" (input)="caseNumber5 = $event.target.value">						
 							</td>
-							<td id="case_point5">						
+							<td id="case_point5">	
+								<input type="text" disabled class="form-control" value = {{caseNumber5*10*1.2}}>					
 							</td>
 						</tr>
 						<tr>
 							<td></td>
 							<td>Phức tạp</td>
 							<td>						
-							    <input type="text" class="form-control tbl4" id="case_number6">					
+							    <input type="text" class="form-control tbl4" (input)="caseNumber6 = $event.target.value">					
 							</td>
-							<td id="case_point6">							
+							<td id="case_point6">	
+								<input type="text" disabled class="form-control" value = {{caseNumber6*15*1.2}}>						
 							</td>
 						</tr>
 						<tr class="danger">
@@ -93,27 +99,30 @@
 							<td></td>
 							<td>Đơn giản</td>
 							<td>								
-							    <input type="text" class="form-control tbl4" id="case_number7">						
+							    <input type="text" class="form-control tbl4" (input)="caseNumber7 = $event.target.value">						
 							</td>
-							<td id="case_point7">					
+							<td id="case_point7">	
+								<input type="text" disabled class="form-control" value = {{caseNumber7*5*1.5}}>				
 							</td>
 						</tr>
 						<tr>
 							<td></td>
 							<td>Trung bình</td>
 							<td>						
-							    <input type="text" class="form-control tbl4" id="case_number8">						
+							    <input type="text" class="form-control tbl4" (input)="caseNumber8 = $event.target.value">						
 							</td>
-							<td id="case_point8">							
+							<td id="case_point8">	
+								<input type="text" disabled class="form-control" value = {{caseNumber8*10*1.5}}>						
 							</td>
 						</tr>
 						<tr>
 							<td></td>
 							<td>Phức tạp</td>
 							<td>							
-							    <input type="text" class="form-control tbl4" id="case_number9">						
+							    <input type="text" class="form-control tbl4" (input)="caseNumber9 = $event.target.value">						
 							</td>
 							<td id="case_point9">							
+								<input type="text" disabled class="form-control" value = {{caseNumber9*15*1.5}}>
 							</td>
 						</tr>
 						<tr >
@@ -121,7 +130,8 @@
 							<td>Cộng 1 + 2 + 3</td>
 							<td id="totalcasenum">	
 							</td>
-							<td id="totalCasePoint">							
+							<td id="totalCasePoint">
+								<input type="text" disabled class="form-control" value = {{total}}>							
 							</td>
 						</tr>
 					</tbody>

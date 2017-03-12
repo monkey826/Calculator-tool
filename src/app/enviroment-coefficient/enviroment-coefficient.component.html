@@ -23,7 +23,7 @@
             <td width="93">
 
             </td>
-            <td width="92" id="tbl6_efw" style="position: fixed;">
+            <td width="92" id="tbl6_efw" >
             </td>
             <td width="">
 
@@ -53,9 +53,10 @@
               1.5
             </td>
             <td width="93">
-              <input type="text" class="form-control table6" id="tbl6_giatrixephang1">
+              <input type="text" class="form-control table6" (input)="rankValue1 = $event.target.value">
             </td>
             <td width="92" id="tbl6_ketqua1">
+              <input type="text" class="form-control" disabled value= {{rankValue1*1.5}}>
             </td>
             <td width="">
               <input type="text" class="form-control">
@@ -68,9 +69,10 @@
               0.5
             </td>
             <td width="93">
-              <input type="text" class="form-control table6" id="tbl6_giatrixephang2">
+              <input type="text" class="form-control table6" (input)="rankValue2 = $event.target.value">
             </td>
             <td width="92" id="tbl6_ketqua2">
+              <input type="text" class="form-control" disabled value= {{rankValue2*0.5}}>
             </td>
             <td width="">
               <input type="text" class="form-control">
@@ -83,9 +85,10 @@
               1
             </td>
             <td width="93">
-              <input type="text" class="form-control table6" id="tbl6_giatrixephang3">
+              <input type="text" class="form-control table6" (input)="rankValue3 = $event.target.value">
             </td>
             <td width="92" id="tbl6_ketqua3">
+              <input type="text" class="form-control" disabled value= {{rankValue3*1}}>
             </td>
             <td width="">
               <input type="text" class="form-control">
@@ -98,9 +101,10 @@
               0.5
             </td>
             <td width="93">
-              <input type="text" class="form-control table6" id="tbl6_giatrixephang4">
+              <input type="text" class="form-control table6" (input)="rankValue4 = $event.target.value">
             </td>
             <td width="92" id="tbl6_ketqua4">
+              <input type="text" class="form-control" disabled value= {{rankValue4*1}}>
             </td>
             <td width="">
               <input type="text" class="form-control">
@@ -113,9 +117,10 @@
               1
             </td>
             <td width="93">
-              <input type="text" class="form-control table6" id="tbl6_giatrixephang5">
+              <input type="text" class="form-control table6" (input)="rankValue5 = $event.target.value">
             </td>
             <td width="92" id="tbl6_ketqua5">
+              <input type="text" class="form-control" disabled value= {{rankValue5*1}}>
             </td>
             <td width="">
               <input type="text" class="form-control">
@@ -144,9 +149,10 @@
               2
             </td>
             <td width="93">
-              <input type="text" class="form-control table6" id="tbl6_giatrixephang6">
+              <input type="text" class="form-control table6" (input)="rankValue6 = $event.target.value">
             </td>
             <td width="92" id="tbl6_ketqua6">
+              <input type="text" class="form-control" disabled value= {{rankValue6*2}}>
             </td>
             <td width="">
               <input type="text" class="form-control">
@@ -159,9 +165,10 @@
               -1
             </td>
             <td width="93">
-              <input type="text" class="form-control table6" id="tbl6_giatrixephang7">
+              <input type="text" class="form-control table6" (input)="rankValue7 = $event.target.value">
             </td>
-            <td width="92" id="tbl6_ketqua7">
+            <td width="92" id="tbl6_ketqua6">
+              <input type="text" class="form-control" disabled value= {{rankValue7*-1}}>
             </td>
             <td width="">
               <input type="text" class="form-control">
@@ -174,9 +181,10 @@
               -1
             </td>
             <td width="93">
-              <input type="text" class="form-control table6" id="tbl6_giatrixephang8">
+              <input type="text" class="form-control table6" (input)="rankValue8 = $event.target.value">
             </td>
             <td width="92" id="tbl6_ketqua8">
+              <input type="text" class="form-control" disabled value= {{rankValue8*-1}}>
             </td>
             <td width="">
               <input type="text" class="form-control">
@@ -192,6 +200,7 @@
 
             </td>
             <td width="92" id="tbl6_ketqua9">
+              <input type="text" class="form-control" disabled value= {{EF}}>
             </td>
             <td width="">
               <input type="text" class="form-control">
@@ -207,6 +216,7 @@
 
             </td>
             <td width="92" id="tbl6_ketqua10">
+              <input type="text" class="form-control" disabled value= {{ES}}>
             </td>
             <td width="">
               <input type="text" class="form-control">
@@ -222,6 +232,7 @@
 
             </td>
             <td width="92" id="tbl6_ketqua11">
+              <input type="text" class="form-control" disabled value= {{P}}>
             </td>
             <td width="">
               <input type="text" class="form-control">

@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./actor.component.css']
 })
 export class ActorComponent implements OnInit {
-
-  constructor() { }
+  causeNumber1 : number = 0;
+  causeNumber2 : number = 0;
+  causeNumber3 : number = 0;
+  totalCauseNumber: number;
+  constructor() { 
+    
+  }
 
   ngOnInit() {
   }
-
+  ngDoCheck(){
+    this.totalCauseNumber = this.causeNumber1 * 1
+    + this.causeNumber2 * 2 
+    + this.causeNumber3 * 3;
+  }
 }
