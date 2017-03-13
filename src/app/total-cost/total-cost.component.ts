@@ -24,4 +24,5 @@ export class TotalCostComponent implements OnInit {
 			var html = htmltable.outerHTML;
 			window.open('data:application/vnd.ms-excel,' + encodeURIComponent(html));
 	}
+  
 }

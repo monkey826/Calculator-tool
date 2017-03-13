@@ -30,4 +30,16 @@ export class ActorComponent implements OnInit {
 			var html = htmltable.outerHTML;
 			window.open('data:application/vnd.ms-excel,' + encodeURIComponent(html));
 	}
+  displayTable(isOpen){
+    let table = document.getElementById("actor-table");
+    let title = document.getElementsByClassName("actor-title")[0];
+    if (isOpen){
+      table["style"]["display"] = "none";
+      title["style"]["display"] = "block";
+    }
+    else {
+      table["style"]["display"] = "block";
+      title["style"]["display"] = "none";
+    }
+  }
 }

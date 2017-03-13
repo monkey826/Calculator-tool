@@ -1,0 +1,6 @@
+#software-value-table:hover , .software-value-title:hover{
+    background-color : #eee;
+}
+.software-value-title{
+    display: none;
+}

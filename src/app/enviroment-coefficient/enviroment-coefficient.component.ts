@@ -80,4 +80,16 @@ export class EnviromentCoefficientComponent implements OnInit {
 			var html = htmltable.outerHTML;
 			window.open('data:application/vnd.ms-excel,' + encodeURIComponent(html));
 	}
+  displayTable(isOpen){
+    let table = document.getElementById("environment-table");
+    let title = document.getElementsByClassName("environment-title")[0];
+    if (isOpen){
+      table["style"]["display"] = "none";
+      title["style"]["display"] = "block";
+    }
+    else {
+      table["style"]["display"] = "block";
+      title["style"]["display"] = "none";
+    }
+  }
 }

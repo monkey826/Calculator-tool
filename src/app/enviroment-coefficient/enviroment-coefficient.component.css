@@ -1,0 +1,6 @@
+#environment-table:hover , .environment-title:hover{
+    background-color : #eee;
+}
+.environment-title{
+    display: none;
+}

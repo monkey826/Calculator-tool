@@ -1,0 +1,6 @@
+#usecase-table:hover , .usecase-title:hover{
+    background-color : #eee;
+}
+.usecase-title{
+    display: none;
+}

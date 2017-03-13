@@ -1,0 +1,6 @@
+#tech-table:hover , .tech-title:hover{
+    background-color : #eee;
+}
+.tech-title{
+    display: none;
+}
