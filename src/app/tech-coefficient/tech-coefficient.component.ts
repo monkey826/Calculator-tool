@@ -1,3 +1,4 @@
+import { GlobalVars } from './../global-vars';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -20,7 +21,7 @@ export class TechCoefficientComponent implements OnInit {
   rankValue12: number = 0;
   rankValue13: number = 0;
   total : number = 0;
-  constructor() { }
+  constructor(public globalVars : GlobalVars) { }
 
   ngOnInit() {
   }
@@ -40,6 +41,7 @@ export class TechCoefficientComponent implements OnInit {
     +this.rankValue13*1
     ;
     this.total = 0.6 + 0.01*sum;
-    
+    this.globalVars.TCF = this.total;
+    // this.globalVars.TCF = 5;
   }
 }

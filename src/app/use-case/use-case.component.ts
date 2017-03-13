@@ -1,3 +1,4 @@
+import { GlobalVars } from './../global-vars';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -16,7 +17,7 @@ export class UseCaseComponent implements OnInit {
   caseNumber7 : number = 0;
   caseNumber8 : number = 0;
   caseNumber9 : number = 0;
-  constructor() { }
+  constructor(public globalVars : GlobalVars) { }
 
   ngOnInit() {
   }
@@ -32,5 +33,7 @@ export class UseCaseComponent implements OnInit {
     + this.caseNumber8*10*1.5
     + this.caseNumber9*15*1.5
     ;
+    this.globalVars.TBF = this.total;
+    // this.globalVars.TBF = 4;
   }
 }

@@ -1,3 +1,4 @@
+import { GlobalVars } from './../global-vars';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,7 +11,7 @@ export class ActorComponent implements OnInit {
   causeNumber2 : number = 0;
   causeNumber3 : number = 0;
   totalCauseNumber: number;
-  constructor() { 
+  constructor(public globalVars : GlobalVars) { 
     
   }
 
@@ -20,5 +21,8 @@ export class ActorComponent implements OnInit {
     this.totalCauseNumber = this.causeNumber1 * 1
     + this.causeNumber2 * 2 
     + this.causeNumber3 * 3;
+
+    this.globalVars.TAW = this.totalCauseNumber;
+    // this.globalVars.TAW = 2;
   }
 }

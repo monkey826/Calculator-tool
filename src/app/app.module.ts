@@ -1,3 +1,4 @@
+import { GlobalVars } from './global-vars';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -9,7 +10,6 @@ import { UseCaseComponent } from './use-case/use-case.component';
 import { TechCoefficientComponent } from './tech-coefficient/tech-coefficient.component';
 import { EnviromentCoefficientComponent } from './enviroment-coefficient/enviroment-coefficient.component';
 import { SoftwareValueComponent } from './software-value/software-value.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +24,7 @@ import { SoftwareValueComponent } from './software-value/software-value.componen
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [GlobalVars],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
