@@ -36,4 +36,9 @@ export class UseCaseComponent implements OnInit {
     this.globalVars.TBF = this.total;
     // this.globalVars.TBF = 4;
   }
+  exportToExcel(mytblId) {
+			var htmltable = document.getElementById(mytblId);
+			var html = htmltable.outerHTML;
+			window.open('data:application/vnd.ms-excel,' + encodeURIComponent(html));
+	}
 }

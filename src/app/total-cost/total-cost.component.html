@@ -44,7 +44,7 @@
             <td id="lightbox_GPM">{{GPM}}</td>
             <td>G(PM)</td>
           </tr>
-          <tr>
+          <tr class = "info">
             <td></td>
             <td>TỔNG CỘNG</td>
             <td>G(PM)</td>
@@ -54,7 +54,8 @@
         </tbody>
       </table>
     </form>
-
+    <button type="button" class="btn btn-danger center-block" (click)="exportToExcel('table_CausePoint')" >Export</button>
+    
     <!--Progress-->
     <div class="progress">
       <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"

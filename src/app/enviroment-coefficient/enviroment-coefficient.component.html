@@ -14,7 +14,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr class ="info">
             <td width="46">I</td>
             <td width="448">Hệ số tác động môi trường và nhóm làm việc</td>
             <td width="94">
@@ -95,7 +95,7 @@
             </td>
           </tr>
           <tr>
-            <td width="46">I</td>
+            <td width="46">4</td>
             <td width="448">Có kinh nghiệm lãnh đạo nhóm</td>
             <td width="94">
               0.5
@@ -111,7 +111,7 @@
             </td>
           </tr>
           <tr>
-            <td width="46">I</td>
+            <td width="46">5</td>
             <td width="448">Tính chất năng động</td>
             <td width="94">
               1
@@ -190,9 +190,9 @@
               <input type="text" class="form-control">
             </td>
           </tr>
-          <tr>
-            <td width="46">II</td>
-            <td width="448">Hệ số phức tạp về môi trường (EF = 1.4 + (-0.03 x EFW))</td>
+          <tr class ="info">
+            <td width="46"><b>II</b></td>
+            <td width="448"><b>Hệ số phức tạp về môi trường (EF = 1.4 + (-0.03 x EFW))</b></td>
             <td width="94">
 
             </td>
@@ -206,9 +206,9 @@
               <input type="text" class="form-control">
             </td>
           </tr>
-          <tr>
-            <td width="46">III</td>
-            <td width="448">Độ ổn định kinh nghiệm (ES)</td>
+          <tr class ="info">
+            <td width="46"><b>III</b></td>
+            <td width="448"><b>Độ ổn định kinh nghiệm (ES)</b></td>
             <td width="94">
 
             </td>
@@ -222,9 +222,9 @@
               <input type="text" class="form-control">
             </td>
           </tr>
-          <tr>
-            <td width="46">IV</td>
-            <td width="448">Nội suy thời gian lao động (P)</td>
+          <tr class ="info">
+            <td width="46"><b>IV</b></td>
+            <td width="448"><b>Nội suy thời gian lao động (P)</b></td>
             <td width="94">
 
             </td>
@@ -242,5 +242,6 @@
       </table>
     </div>
   </form>
-  <button type="button" class="btn" onclick="tableToExcel('tbl6', 'Giá trị tương lai ròng')" id="btnExport_tbl6">Export</button>
+  <button type="button" class="btn center-block btn-danger" (click)="exportToExcel('table_CausePoint')" >Export</button>
+
 </div>

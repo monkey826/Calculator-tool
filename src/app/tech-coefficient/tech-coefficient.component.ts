@@ -44,4 +44,9 @@ export class TechCoefficientComponent implements OnInit {
     this.globalVars.TCF = this.total;
     // this.globalVars.TCF = 5;
   }
+  exportToExcel(mytblId) {
+			var htmltable = document.getElementById(mytblId);
+			var html = htmltable.outerHTML;
+			window.open('data:application/vnd.ms-excel,' + encodeURIComponent(html));
+	}
 }

@@ -5,12 +5,12 @@
       <table class="table table-hover table-bordered" id="table_CausePoint">
         <thead>
           <tr class="success">
-            <th>TT</th>
-            <th>Loại tác nhân</th>
-            <th>Mô tả</th>
-            <th>Số tác nhân</th>
-            <th>Điểm của từng loại tác nhân</th>
-            <th>Ghi chú</th>
+            <th width="20">TT</th>
+            <th width="70">Loại tác nhân</th>
+            <th width="50">Mô tả</th>
+            <th width="70">Số tác nhân</th>
+            <th width="90">Điểm của từng loại tác nhân</th>
+            <th width="70">Ghi chú</th>
           </tr>
         </thead>
         <tbody>
@@ -56,10 +56,10 @@
               <input type="text" class="form-control">
             </td>
           </tr>
-          <tr>
+          <tr class = "info">
             <td>4</td>
-            <td>Cộng (1 + 2 + 3)</td>
-            <td>TAW</td>
+            <td><b>Cộng (1 + 2 + 3)</b></td>
+            <td><b>TAW</b></td>
             <td>
             </td>
             <td id="totalCauseNumber">
@@ -70,6 +70,6 @@
         </tbody>
       </table>
     </div>
-    <button type="button" class="btn" onclick="tableToExcel('table_CausePoint', 'Giá trị tương lai ròng')">Export</button>
+    <button type="button" class="btn center-block btn-danger" (click)="exportToExcel('table_CausePoint')" >Export</button>
   </form>
 </div>

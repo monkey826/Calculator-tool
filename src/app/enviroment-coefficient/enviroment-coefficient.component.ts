@@ -75,5 +75,9 @@ export class EnviromentCoefficientComponent implements OnInit {
     this.globalVars.EF = this.EF;
     // this.globalVars.EF = 3;
   }
-
+  exportToExcel(mytblId) {
+			var htmltable = document.getElementById(mytblId);
+			var html = htmltable.outerHTML;
+			window.open('data:application/vnd.ms-excel,' + encodeURIComponent(html));
+	}
 }

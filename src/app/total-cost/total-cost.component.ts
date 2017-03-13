@@ -19,5 +19,9 @@ export class TotalCostComponent implements OnInit {
     this.TL = (this.G + this.C) * 0.06;
     this.GPM = this.G + this.C + this.TL;
   }
-
+  exportToExcel(mytblId) {
+			var htmltable = document.getElementById(mytblId);
+			var html = htmltable.outerHTML;
+			window.open('data:application/vnd.ms-excel,' + encodeURIComponent(html));
+	}
 }

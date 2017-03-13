@@ -54,5 +54,9 @@ export class SoftwareValueComponent implements OnInit {
     this.globalVars.G = this.G;
     
   }
-
+  exportToExcel(mytblId) {
+			var htmltable = document.getElementById(mytblId);
+			var html = htmltable.outerHTML;
+			window.open('data:application/vnd.ms-excel,' + encodeURIComponent(html));
+	}
 }

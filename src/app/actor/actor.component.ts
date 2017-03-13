@@ -25,4 +25,9 @@ export class ActorComponent implements OnInit {
     this.globalVars.TAW = this.totalCauseNumber;
     // this.globalVars.TAW = 2;
   }
+  exportToExcel(mytblId) {
+			var htmltable = document.getElementById(mytblId);
+			var html = htmltable.outerHTML;
+			window.open('data:application/vnd.ms-excel,' + encodeURIComponent(html));
+	}
 }

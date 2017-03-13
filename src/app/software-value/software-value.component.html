@@ -5,15 +5,15 @@
       <table class="table table-hover table-bordered" id="table_CausePoint">
         <thead>
           <tr class="success">
-            <th>TT</th>
-            <th width="400">Hạng mục</th>
-            <th width="250">Diễn giải</th>
-            <th>Giá trị</th>
-            <th>Ghi chú</th>
+            <th class = "text-center">TT</th>
+            <th class = "text-center" width="400">Hạng mục</th>
+            <th class = "text-center" width="250">Diễn giải</th>
+            <th class = "text-center">Giá trị</th>
+            <th class = "text-center">Ghi chú</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr class = "info">
             <td>I</td>
             <td>Tính điểm trường hợp sử dụng (Use case)</td>
             <td></td>
@@ -91,7 +91,7 @@
               <input type="text" class="form-control">
             </td>
           </tr>
-          <tr>
+          <tr class = "info">
             <td>II</td>
             <td>Nội suy thời gian lao động (P)</td>
             <td>P: người/giờ/AUCP</td>
@@ -103,7 +103,7 @@
               <input type="text" class="form-control">
             </td>
           </tr>
-          <tr>
+          <tr class = "info">
             <td>III</td>
             <td>Giá trị nỗ lực thực tế (E)</td>
             <td>E = 10/6 x AUCP</td>
@@ -115,7 +115,7 @@
               <input type="text" class="form-control">
             </td>
           </tr>
-          <tr>
+          <tr >
             <td>IV</td>
             <td>Mức lương lao động bình quân (H)</td>
             <td>H: người/giờ</td>
@@ -126,7 +126,7 @@
               <input type="text" class="form-control">
             </td>
           </tr>
-          <tr>
+          <tr class = "info">
             <td>V</td>
             <td>Giá trị phần mềm nội bộ (G)</td>
             <td>G = 1.4 x E x P x H</td>
@@ -139,7 +139,8 @@
           </tr>
         </tbody>
       </table>
-      <button type="button" class="btn" id="btnExport_tbl3">Export</button>
     </div>
   </form>
+  <button type="button" class="btn center-block btn-danger" (click)="exportToExcel('table_CausePoint')" >Export</button>
+
 </div>

@@ -16,7 +16,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr class="info">
             <td width="5.5%">I</td>
             <td width="42%">Hệ số kĩ thuật - công nghệ (TFW)</td>
             <td width="12.5%">
@@ -240,7 +240,7 @@
               <input type="text" class="form-control">
             </td>
           </tr>
-          <tr>
+          <tr class ="info">
             <td>II</td>
             <td>Hệ số phức tap về kĩ thuật - công nghệ (TCF)</td>
             <td>
@@ -261,5 +261,6 @@
     </div>
 
   </form>
-  <button onclick="tableToExcel('tbl5', 'Giá trị tương lai ròng')" type="button" class="btn" id="btnExport_tbl5" >Export</button>
+  <button type="button" class="btn center-block btn-danger" (click)="exportToExcel('table_CausePoint')" >Export</button>
+
 </div>
