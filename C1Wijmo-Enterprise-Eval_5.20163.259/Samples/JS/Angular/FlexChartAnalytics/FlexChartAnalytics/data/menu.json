@@ -1,0 +1,14 @@
+﻿[
+    {
+        "section": "Analytics",
+        "links":  [
+            { "text": "TrendLine", "url": "#/trendline" },
+            { "text": "MovingAverage", "url": "#/movingaverage" },
+            { "text": "YFunctionSeries", "url": "#/yfunctionseries" },
+            { "text": "Parametric FunctionSeries", "url": "#/pfunctionseries" },
+            { "text": "Waterfall", "url": "#/waterfall" },
+            { "text": "Box & Whisker", "url": "#/boxwhisker" },
+            { "text": "ErrorBar", "url": "#/errorbar" }
+        ]
+    }
+]

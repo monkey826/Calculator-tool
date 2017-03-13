@@ -41,7 +41,8 @@ export class SoftwareValueComponent implements OnInit {
     this.AUCP = this.UUCP * this.TCF * this.EF;
     this.globalVars.AUCP = this.AUCP;
     // console.log(this.UUCP)
-    this.P = this.H / this.AUCP;
+    // this.P = this.H / this.AUCP;
+    this.P = this.globalVars.P;
     this.globalVars.P = this.P;
 
     this.E = 10/6 * this.AUCP;

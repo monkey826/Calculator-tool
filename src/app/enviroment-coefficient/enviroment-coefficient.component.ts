@@ -71,6 +71,7 @@ export class EnviromentCoefficientComponent implements OnInit {
       thoigianlaodong = 48;
     }
     this.P = thoigianlaodong;
+    this.globalVars.P = this.P;
     this.globalVars.EF = this.EF;
     // this.globalVars.EF = 3;
   }

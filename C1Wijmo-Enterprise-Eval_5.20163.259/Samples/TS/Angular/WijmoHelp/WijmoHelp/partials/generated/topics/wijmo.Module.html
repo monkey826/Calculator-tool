@@ -1,0 +1,965 @@
+<div class="header-panel module">
+<h2><span class="identifier">wijmo</span> Module</h2>
+<dl class="dl-horizontal">
+<dt>File</dt><dd class="filename">wijmo.js</dd>
+<dt>Module</dt><dd><span class="identifier">wijmo</span></dd>
+</dl>
+<div class="comment"><p>Contains utilities used by all controls and modules, as well as the
+<a href="topic/wijmo.Control.Class.html"><span class="identifier">Control</span></a> and <a href="topic/wijmo.Event.Class.html"><span class="identifier">Event</span></a> classes.</p></div>
+</div>
+<div class="member-panel module members">
+<h3 class="node">Classes</h3>
+<ul>
+<li class="mclass"><a href="topic/wijmo.Binding.Class.html">Binding</a></li>
+<li class="mclass"><a href="topic/wijmo.CancelEventArgs.Class.html">CancelEventArgs</a></li>
+<li class="mclass"><a href="topic/wijmo.Clipboard.Class.html">Clipboard</a></li>
+<li class="mclass"><a href="topic/wijmo.Color.Class.html">Color</a></li>
+<li class="mclass"><a href="topic/wijmo.Control.Class.html">Control</a></li>
+<li class="mclass"><a href="topic/wijmo.DateTime.Class.html">DateTime</a></li>
+<li class="mclass"><a href="topic/wijmo.Event.Class.html">Event</a></li>
+<li class="mclass"><a href="topic/wijmo.EventArgs.Class.html">EventArgs</a></li>
+<li class="mclass"><a href="topic/wijmo.Globalize.Class.html">Globalize</a></li>
+<li class="mclass"><a href="topic/wijmo.Point.Class.html">Point</a></li>
+<li class="mclass"><a href="topic/wijmo.PrintDocument.Class.html">PrintDocument</a></li>
+<li class="mclass"><a href="topic/wijmo.PropertyChangedEventArgs.Class.html">PropertyChangedEventArgs</a></li>
+<li class="mclass"><a href="topic/wijmo.Rect.Class.html">Rect</a></li>
+<li class="mclass"><a href="topic/wijmo.RequestErrorEventArgs.Class.html">RequestErrorEventArgs</a></li>
+<li class="mclass"><a href="topic/wijmo.Size.Class.html">Size</a></li>
+<li class="mclass"><a href="topic/wijmo.Tooltip.Class.html">Tooltip</a></li>
+<li class="mclass"><a href="topic/wijmo.TooltipEventArgs.Class.html">TooltipEventArgs</a></li>
+</ul>
+<h3 class="node">Interfaces</h3>
+<ul>
+<li class="minterface"><a href="topic/wijmo.IEventHandler.Interface.html">IEventHandler</a></li>
+<li class="minterface"><a href="topic/wijmo.IQueryInterface.Interface.html">IQueryInterface</a></li>
+</ul>
+<h3 class="node">Enums</h3>
+<ul>
+<li class="menum"><a href="topic/wijmo.Aggregate.Enum.html">Aggregate</a></li>
+<li class="menum"><a href="topic/wijmo.DataType.Enum.html">DataType</a></li>
+<li class="menum"><a href="topic/wijmo.Key.Enum.html">Key</a></li>
+</ul>
+<h3 class="node">Properties</h3>
+<ul>
+<li class="mproperty"><a href="topic/wijmo.Module.html/#culture">culture</a></li>
+</ul>
+<h3 class="node">Methods</h3>
+<ul>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#addClass">addClass</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#animate">animate</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#asArray">asArray</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#asBoolean">asBoolean</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#asCollectionView">asCollectionView</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#asDate">asDate</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#asEnum">asEnum</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#asFunction">asFunction</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#asInt">asInt</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#asNumber">asNumber</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#assert">assert</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#asString">asString</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#asType">asType</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#changeType">changeType</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#clamp">clamp</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#closest">closest</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#contains">contains</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#copy">copy</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#createElement">createElement</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#enable">enable</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#escapeHtml">escapeHtml</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#format">format</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#getActiveElement">getActiveElement</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#getAggregate">getAggregate</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#getElement">getElement</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#getElementRect">getElementRect</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#getType">getType</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#getVersion">getVersion</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#hasClass">hasClass</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#hasItems">hasItems</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#hidePopup">hidePopup</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#httpRequest">httpRequest</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#isArray">isArray</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#isBoolean">isBoolean</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#isDate">isDate</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#isFunction">isFunction</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#isInt">isInt</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#isNullOrWhiteSpace">isNullOrWhiteSpace</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#isNumber">isNumber</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#isObject">isObject</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#isPrimitive">isPrimitive</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#isString">isString</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#isUndefined">isUndefined</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#mouseToPage">mouseToPage</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#moveFocus">moveFocus</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#removeClass">removeClass</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#setCss">setCss</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#setSelectionRange">setSelectionRange</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#setText">setText</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#showPopup">showPopup</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#toFixed">toFixed</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#toggleClass">toggleClass</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#toHeaderCase">toHeaderCase</a></li>
+<li class="mmethod"><a href="topic/wijmo.Module.html/#tryCast">tryCast</a></li>
+</ul>
+</div>
+<h3 class="node">Properties</h3>
+<div class="member-list" ng-class="{ 'show-inherited' : ctx.showInherited, 'show-raisers' : ctx.showRaisers }">
+<div id="culture" class="member-panel mproperty">
+<h3>culture</h3>
+<div class="comment"><p>Gets or sets an object that contains all localizable strings in the Wijmo library.</p>
+<p>The culture selector is a two-letter string that represents an 
+<a href='http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes'>ISO 639 culture</a>.</p></div>
+<dl class="dl-horizontal">
+  <dt>Type</dt><dd><span class="identifier">any</span></dd>
+</dl>
+</div>
+</div>
+<h3 class="node">Methods</h3>
+<div class="member-list" ng-class="{ 'show-inherited' : ctx.showInherited, 'show-raisers' : ctx.showRaisers }">
+<div id="addClass" class="member-panel mmethod">
+<h3>addClass</h3>
+<pre>addClass(e: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a>, className: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a>): <span class="identifier">void</span></pre>
+<div class="comment"><p>Adds a class to an element.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>e</b>: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a><br/><p>Element that will have the class added.</p></li><li><b>className</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a><br/><p>Class to add to the element.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">void</span></dd>
+</dl>
+</div>
+<div id="animate" class="member-panel mmethod">
+<h3>animate</h3>
+<pre>animate(apply: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank"><span class="identifier">Function</span></a>, duration?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a>, step?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a></pre>
+<div class="comment"><p>Calls a function on a timer with a parameter varying between zero and one.</p>
+<p>Use this function to create animations by modifying document properties
+or styles on a timer.</p>
+<p>For example, the code below changes the opacity of an element from zero
+to one in one second:
+</p>
+
+<pre>var element = document.getElementById('someElement');
+animate(function(pct) {
+  element.style.opacity = pct;
+}, 1000);</pre>
+<p>The function returns an interval ID that you can use to stop the
+animation. This is typically done when you are starting a new animation
+and wish to suspend other on-going animations on the same element.
+For example, the code below keeps track of the interval ID and clears
+if before starting a new animation:
+</p>
+
+<pre>var element = document.getElementById('someElement');
+if (this._animInterval) {
+  clearInterval(this._animInterval);
+}
+var self = this;
+self._animInterval = animate(function(pct) {
+  element.style.opacity = pct;
+  if (pct == 1) {
+    self._animInterval = null;
+  }
+}, 1000);</pre></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>apply</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank"><span class="identifier">Function</span></a><br/><p>Callback function that modifies the document.
+The function takes a single parameter that represents a percentage.</p></li><li><b>duration</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a> <span class="badge">Optional</span><br/><p>The duration of the animation, in milliseconds.</p></li><li><b>step</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a> <span class="badge">Optional</span><br/><p>The interval between animation frames, in milliseconds.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a></dd>
+</dl>
+</div>
+<div id="asArray" class="member-panel mmethod">
+<h3>asArray</h3>
+<pre>asArray(value: <span class="identifier">any</span>, nullOK?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>): <span class="identifier">any</span>[]</pre>
+<div class="comment"><p>Asserts that a value is an array.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <span class="identifier">any</span><br/><p>Value supposed to be an array.</p></li><li><b>nullOK</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a> <span class="badge">Optional</span><br/><p>Whether null values are acceptable.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">any</span>[]</dd>
+</dl>
+</div>
+<div id="asBoolean" class="member-panel mmethod">
+<h3>asBoolean</h3>
+<pre>asBoolean(value: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>, nullOK?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></pre>
+<div class="comment"><p>Asserts that a value is a Boolean.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a><br/><p>Value supposed to be Boolean.</p></li><li><b>nullOK</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a> <span class="badge">Optional</span><br/><p>Whether null values are acceptable.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></dd>
+</dl>
+</div>
+<div id="asCollectionView" class="member-panel mmethod">
+<h3>asCollectionView</h3>
+<pre>asCollectionView(value: <span class="identifier">any</span>, nullOK?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>): <a href="topic/wijmo.collections.ICollectionView.Interface.html"><span class="identifier">ICollectionView</span></a></pre>
+<div class="comment"><p>Asserts that a value is an <a href="topic/wijmo.collections.ICollectionView.Interface.html"><span class="identifier">ICollectionView</span></a> or an Array.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <span class="identifier">any</span><br/><p>Array or <a href="topic/wijmo.collections.ICollectionView.Interface.html"><span class="identifier">ICollectionView</span></a>.</p></li><li><b>nullOK</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a> <span class="badge">Optional</span><br/><p>Whether null values are acceptable.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="topic/wijmo.collections.ICollectionView.Interface.html"><span class="identifier">ICollectionView</span></a></dd>
+</dl>
+</div>
+<div id="asDate" class="member-panel mmethod">
+<h3>asDate</h3>
+<pre>asDate(value: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank"><span class="identifier">Date</span></a>, nullOK?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank"><span class="identifier">Date</span></a></pre>
+<div class="comment"><p>Asserts that a value is a Date.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank"><span class="identifier">Date</span></a><br/><p>Value supposed to be a Date.</p></li><li><b>nullOK</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a> <span class="badge">Optional</span><br/><p>Whether null values are acceptable.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank"><span class="identifier">Date</span></a></dd>
+</dl>
+</div>
+<div id="asEnum" class="member-panel mmethod">
+<h3>asEnum</h3>
+<pre>asEnum(value: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a>, enumType: <span class="identifier">any</span>, nullOK?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a></pre>
+<div class="comment"><p>Asserts that a value is a valid setting for an enumeration.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a><br/><p>Value supposed to be a member of the enumeration.</p></li><li><b>enumType</b>: <span class="identifier">any</span><br/><p>Enumeration to test for.</p></li><li><b>nullOK</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a> <span class="badge">Optional</span><br/><p>Whether null values are acceptable.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a></dd>
+</dl>
+</div>
+<div id="asFunction" class="member-panel mmethod">
+<h3>asFunction</h3>
+<pre>asFunction(value: <span class="identifier">any</span>, nullOK?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank"><span class="identifier">Function</span></a></pre>
+<div class="comment"><p>Asserts that a value is a function.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <span class="identifier">any</span><br/><p>Value supposed to be a function.</p></li><li><b>nullOK</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a> <span class="badge">Optional</span><br/><p>Whether null values are acceptable.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank"><span class="identifier">Function</span></a></dd>
+</dl>
+</div>
+<div id="asInt" class="member-panel mmethod">
+<h3>asInt</h3>
+<pre>asInt(value: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a>, nullOK?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>, positive?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a></pre>
+<div class="comment"><p>Asserts that a value is an integer.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a><br/><p>Value supposed to be an integer.</p></li><li><b>nullOK</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a> <span class="badge">Optional</span><br/><p>Whether null values are acceptable.</p></li><li><b>positive</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a> <span class="badge">Optional</span><br/><p>Whether to accept only positive integers.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a></dd>
+</dl>
+</div>
+<div id="asNumber" class="member-panel mmethod">
+<h3>asNumber</h3>
+<pre>asNumber(value: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a>, nullOK?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>, positive?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a></pre>
+<div class="comment"><p>Asserts that a value is a number.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a><br/><p>Value supposed to be numeric.</p></li><li><b>nullOK</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a> <span class="badge">Optional</span><br/><p>Whether null values are acceptable.</p></li><li><b>positive</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a> <span class="badge">Optional</span><br/><p>Whether to accept only positive numeric values.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a></dd>
+</dl>
+</div>
+<div id="assert" class="member-panel mmethod">
+<h3>assert</h3>
+<pre>assert(condition: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>, msg: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a>): <span class="identifier">void</span></pre>
+<div class="comment"><p>Throws an exception if a condition is false.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>condition</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a><br/><p>Condition expected to be true.</p></li><li><b>msg</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a><br/><p>Message of the exception if the condition is not true.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">void</span></dd>
+</dl>
+</div>
+<div id="asString" class="member-panel mmethod">
+<h3>asString</h3>
+<pre>asString(value: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a>, nullOK?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a></pre>
+<div class="comment"><p>Asserts that a value is a string.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a><br/><p>Value supposed to be a string.</p></li><li><b>nullOK</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a> <span class="badge">Optional</span><br/><p>Whether null values are acceptable.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a></dd>
+</dl>
+</div>
+<div id="asType" class="member-panel mmethod">
+<h3>asType</h3>
+<pre>asType(value: <span class="identifier">any</span>, type: <span class="identifier">any</span>, nullOK?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>): <span class="identifier">any</span></pre>
+<div class="comment"><p>Asserts that a value is an instance of a given type.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <span class="identifier">any</span><br/><p>Value to be checked.</p></li><li><b>type</b>: <span class="identifier">any</span><br/><p>Type of value expected.</p></li><li><b>nullOK</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a> <span class="badge">Optional</span><br/><p>Whether null values are acceptable.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">any</span></dd>
+</dl>
+</div>
+<div id="changeType" class="member-panel mmethod">
+<h3>changeType</h3>
+<pre>changeType(value: <span class="identifier">any</span>, type: <a href="topic/wijmo.DataType.Enum.html"><span class="identifier">DataType</span></a>, format: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a>): <span class="identifier">any</span></pre>
+<div class="comment"><p>Changes the type of a value.</p>
+<p>If the conversion fails, the original value is returned. To check if a
+conversion succeeded, you should check the type of the returned value.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <span class="identifier">any</span><br/><p>Value to convert.</p></li><li><b>type</b>: <a href="topic/wijmo.DataType.Enum.html"><span class="identifier">DataType</span></a><br/><p><a href="topic/wijmo.DataType.Enum.html"><span class="identifier">DataType</span></a> to convert the value to.</p></li><li><b>format</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a><br/><p>Format to use when converting to or from strings.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">any</span></dd>
+</dl>
+</div>
+<div id="clamp" class="member-panel mmethod">
+<h3>clamp</h3>
+<pre>clamp(value: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a>, min: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a>, max: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a></pre>
+<div class="comment"><p>Clamps a value between a minimum and a maximum.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a><br/><p>Original value.</p></li><li><b>min</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a><br/><p>Minimum allowed value.</p></li><li><b>max</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a><br/><p>Maximum allowed value.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a></dd>
+</dl>
+</div>
+<div id="closest" class="member-panel mmethod">
+<h3>closest</h3>
+<pre>closest(e: <span class="identifier">any</span>, selector: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a>): <a href="https://developer.mozilla.org/en/docs/Web/API/Node" target="_blank"><span class="identifier">Node</span></a></pre>
+<div class="comment"><p>Finds the closest ancestor that satisfies a selector.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>e</b>: <span class="identifier">any</span><br/><p>Element where the search should start.</p></li><li><b>selector</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a><br/><p>A string containing a selector expression to match elements against.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/API/Node" target="_blank"><span class="identifier">Node</span></a></dd>
+</dl>
+</div>
+<div id="contains" class="member-panel mmethod">
+<h3>contains</h3>
+<pre>contains(parent: <span class="identifier">any</span>, child: <span class="identifier">any</span>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></pre>
+<div class="comment"><p>Checks whether an HTML element contains another.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>parent</b>: <span class="identifier">any</span><br/><p>Parent element.</p></li><li><b>child</b>: <span class="identifier">any</span><br/><p>Child element.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></dd>
+</dl>
+</div>
+<div id="copy" class="member-panel mmethod">
+<h3>copy</h3>
+<pre>copy(dst: <span class="identifier">any</span>, src: <span class="identifier">any</span>): <span class="identifier">void</span></pre>
+<div class="comment"><p>Copies properties from an object to another.</p>
+<p>This method is typically used to initialize controls and other Wijmo objects
+by setting their properties and assigning event handlers.</p>
+<p>The destination object must define all the properties defined in the source,
+or an error will be thrown.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>dst</b>: <span class="identifier">any</span><br/><p>The destination object.</p></li><li><b>src</b>: <span class="identifier">any</span><br/><p>The source object.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">void</span></dd>
+</dl>
+</div>
+<div id="createElement" class="member-panel mmethod">
+<h3>createElement</h3>
+<pre>createElement(html: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a>, appendTo?: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a>): <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a></pre>
+<div class="comment"><p>Creates an element from an HTML string.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>html</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a><br/><p>HTML fragment to convert into an HTMLElement.</p></li><li><b>appendTo</b>: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a> <span class="badge">Optional</span><br/><p>Optional HTMLElement to append the new element to.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a></dd>
+</dl>
+</div>
+<div id="enable" class="member-panel mmethod">
+<h3>enable</h3>
+<pre>enable(e: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a>, value: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>): <span class="identifier">void</span></pre>
+<div class="comment"><p>Enables or disables an element.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>e</b>: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a><br/><p>Element to enable or disable.</p></li><li><b>value</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a><br/><p>Whether to enable or disable the element.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">void</span></dd>
+</dl>
+</div>
+<div id="escapeHtml" class="member-panel mmethod">
+<h3>escapeHtml</h3>
+<pre>escapeHtml(text: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a>): <span class="identifier">void</span></pre>
+<div class="comment"><p>Escapes a string by replacing HTML characters as text entities.</p>
+<p>Strings entered by uses should always be escaped before they are displayed
+in HTML pages. This ensures page integrity and prevents HTML/javascript
+injection attacks.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>text</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a><br/><p>Text to escape.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">void</span></dd>
+</dl>
+</div>
+<div id="format" class="member-panel mmethod">
+<h3>format</h3>
+<pre>format(format: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a>, data: <span class="identifier">any</span>, formatFunction?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank"><span class="identifier">Function</span></a>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a></pre>
+<div class="comment"><p>Replaces each format item in a specified string with the text equivalent of an
+object's value.</p>
+<p>The function works by replacing parts of the <b>formatString</b> with the pattern
+'{name:format}' with properties of the <b>data</b> parameter. For example:</p>
+
+
+<pre>var data = { name: 'Joe', amount: 123456 };
+var msg = wijmo.format('Hello {name}, you won {amount:n2}!', data);</pre>
+<p>The optional <b>formatFunction</b> allows you to customize the content by providing
+context-sensitive formatting. If provided, the format function gets called for each
+format element and gets passed the data object, the parameter name, the format,
+and the value; it should return an output string. For example:</p>
+
+
+<pre>var data = { name: 'Joe', amount: 123456 };
+var msg = wijmo.format('Hello {name}, you won {amount:n2}!', data,
+            function (data, name, fmt, val) {
+              if (wijmo.isString(data[name])) {
+                  val = wijmo.escapeHtml(data[name]);
+              }
+              return val;
+            });</pre></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>format</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a><br/><p>A composite format string.</p></li><li><b>data</b>: <span class="identifier">any</span><br/><p>The data object used to build the string.</p></li><li><b>formatFunction</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank"><span class="identifier">Function</span></a> <span class="badge">Optional</span><br/><p>An optional function used to format items in context.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a></dd>
+</dl>
+</div>
+<div id="getActiveElement" class="member-panel mmethod">
+<h3>getActiveElement</h3>
+<pre>getActiveElement(): <span class="identifier">void</span></pre>
+<div class="comment"><p>Gets a reference to the element that contains the focus,
+accounting for shadow document fragments.</p></div>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">void</span></dd>
+</dl>
+</div>
+<div id="getAggregate" class="member-panel mmethod">
+<h3>getAggregate</h3>
+<pre>getAggregate(aggType: <a href="topic/wijmo.Aggregate.Enum.html"><span class="identifier">Aggregate</span></a>, items: <span class="identifier">any</span>[], binding?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a>): <span class="identifier">void</span></pre>
+<div class="comment"><p>Calculates an aggregate value from the values in an array.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>aggType</b>: <a href="topic/wijmo.Aggregate.Enum.html"><span class="identifier">Aggregate</span></a><br/><p>Type of aggregate to calculate.</p></li><li><b>items</b>: <span class="identifier">any</span>[]<br/><p>Array with the items to aggregate.</p></li><li><b>binding</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a> <span class="badge">Optional</span><br/><p>Name of the property to aggregate on (in case the items are not simple values).</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">void</span></dd>
+</dl>
+</div>
+<div id="getElement" class="member-panel mmethod">
+<h3>getElement</h3>
+<pre>getElement(selector: <span class="identifier">any</span>): <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a></pre>
+<div class="comment"><p>Gets an element from a jQuery-style selector.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>selector</b>: <span class="identifier">any</span><br/><p>An element, a query selector string, or a jQuery object.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a></dd>
+</dl>
+</div>
+<div id="getElementRect" class="member-panel mmethod">
+<h3>getElementRect</h3>
+<pre>getElementRect(e: <a href="https://developer.mozilla.org/en/docs/Web/API/Element" target="_blank"><span class="identifier">Element</span></a>): <a href="topic/wijmo.Rect.Class.html"><span class="identifier">Rect</span></a></pre>
+<div class="comment"><p>Gets the bounding rectangle of an element in page coordinates.</p>
+<p>This is similar to the <b>getBoundingClientRect</b> function,
+except that uses window coordinates, which change when the
+document scrolls.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>e</b>: <a href="https://developer.mozilla.org/en/docs/Web/API/Element" target="_blank"><span class="identifier">Element</span></a><br/></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="topic/wijmo.Rect.Class.html"><span class="identifier">Rect</span></a></dd>
+</dl>
+</div>
+<div id="getType" class="member-panel mmethod">
+<h3>getType</h3>
+<pre>getType(value: <span class="identifier">any</span>): <a href="topic/wijmo.DataType.Enum.html"><span class="identifier">DataType</span></a></pre>
+<div class="comment"><p>Gets the type of a value.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <span class="identifier">any</span><br/><p>Value to test.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="topic/wijmo.DataType.Enum.html"><span class="identifier">DataType</span></a></dd>
+</dl>
+</div>
+<div id="getVersion" class="member-panel mmethod">
+<h3>getVersion</h3>
+<pre>getVersion(): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a></pre>
+<div class="comment"><p>Gets the version of the Wijmo library that is currently loaded.</p></div>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a></dd>
+</dl>
+</div>
+<div id="hasClass" class="member-panel mmethod">
+<h3>hasClass</h3>
+<pre>hasClass(e: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a>, className: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></pre>
+<div class="comment"><p>Checks whether an element has a class.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>e</b>: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a><br/><p>Element to check.</p></li><li><b>className</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a><br/><p>Class to check for.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></dd>
+</dl>
+</div>
+<div id="hasItems" class="member-panel mmethod">
+<h3>hasItems</h3>
+<pre>hasItems(value: <a href="topic/wijmo.collections.ICollectionView.Interface.html"><span class="identifier">ICollectionView</span></a>): <span class="identifier">void</span></pre>
+<div class="comment"><p>Checks whether an <a href="topic/wijmo.collections.ICollectionView.Interface.html"><span class="identifier">ICollectionView</span></a> is defined and not empty.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <a href="topic/wijmo.collections.ICollectionView.Interface.html"><span class="identifier">ICollectionView</span></a><br/><p><a href="topic/wijmo.collections.ICollectionView.Interface.html"><span class="identifier">ICollectionView</span></a> to check.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">void</span></dd>
+</dl>
+</div>
+<div id="hidePopup" class="member-panel mmethod">
+<h3>hidePopup</h3>
+<pre>hidePopup(popup: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a>, remove?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>, fadeOut?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>): <span class="identifier">void</span></pre>
+<div class="comment"><p>Hides a popup element previously displayed with the <a href="topic/wijmo.Module.html/#showPopup"><span class="identifier">showPopup</span></a>
+method.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>popup</b>: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a><br/><p>Popup element to hide.</p></li><li><b>remove</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a> <span class="badge">Optional</span><br/><p>Whether to remove the popup from the DOM or just
+to hide it.</p></li><li><b>fadeOut</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a> <span class="badge">Optional</span><br/><p>Whether to use a fade-out animation to make the 
+popup disappear gradually.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">void</span></dd>
+</dl>
+</div>
+<div id="httpRequest" class="member-panel mmethod">
+<h3>httpRequest</h3>
+<pre>httpRequest(url: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a>, settings?: <span class="identifier">any</span>): <a href="https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest" target="_blank"><span class="identifier">XMLHttpRequest</span></a></pre>
+<div class="comment"><p>Performs HTTP requests.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>url</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a><br/><p>String containing the URL to which the request is sent.</p></li><li><b>settings</b>: <span class="identifier">any</span> <span class="badge">Optional</span><br/><p>An optional object used to configure the request.</p>
+<p>The <b>settings</b> object may contain the following:</p>
+<p><table>
+<tr>
+  <td><b>method</b></td>
+  <td>The HTTP method to use for the request (e.g. "POST", "GET", "PUT").
+      The default is "GET".</td>
+</tr>
+<tr>
+  <td><b>data</b></td>
+  <td>Data to be sent to the server. It is appended to the url for GET requests,
+      and converted to a string for other requests.</td>
+</tr>
+<tr>
+  <td><b>async</b></td>
+  <td>By default, all requests are sent asynchronously (i.e. this is set to true by default).
+      If you need synchronous requests, set this option to false.</td>
+</tr>
+<tr>
+  <td><b>success</b></td>
+  <td>A function to be called if the request succeeds.
+      The function gets passed a single parameter of type <b>XMLHttpRequest</b>.</td>
+</tr>
+<tr>
+  <td><b>error</b></td>
+  <td>A function to be called if the request fails.
+      The function gets passed a single parameter of type <b>XMLHttpRequest</b>.</td>
+</tr>
+<tr>
+  <td><b>complete</b></td>
+  <td>A function to be called when the request finishes (after success and error callbacks are executed).
+      The function gets passed a single parameter of type <b>XMLHttpRequest</b>.</td>
+</tr>
+<tr>
+  <td><b>beforeSend</b></td>
+  <td>A function to be called immediately before the request us sent.
+      The function gets passed a single parameter of type <b>XMLHttpRequest</b>.</td>
+</tr>
+<tr>
+  <td><b>requestHeaders</b></td>
+  <td>A JavaScript object containing key/value pairs to be added to the request
+      headers.</td>
+</tr>
+<tr>
+  <td><b>user</b></td>
+  <td>A username to be used with <b>XMLHttpRequest</b> in response to an HTTP access
+      authentication request.</td>
+</tr>
+<tr>
+  <td><b>password</b></td>
+  <td>A password to be used with <b>XMLHttpRequest</b> in response to an HTTP access
+      authentication request.</td>
+</tr>
+</table></p>
+<p>Use the <b>success</b> to obtain the result of the request which is provided in
+the callback's <b>XMLHttpRequest</b> parameter. For example, the code below uses
+the <a href="topic/wijmo.Module.html/#httpRequest"><span class="identifier">httpRequest</span></a> method to retrieve a list of customers from an OData service:</p>
+
+
+<pre>wijmo.httpRequest('http://services.odata.org/Northwind/Northwind.svc/Customers?$format=json', {
+  success: function (xhr) {
+    var response = JSON.parse(xhr.response),
+        customers = response.value;
+
+    // do something with the customers...
+  }
+});</pre></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest" target="_blank"><span class="identifier">XMLHttpRequest</span></a></dd>
+</dl>
+</div>
+<div id="isArray" class="member-panel mmethod">
+<h3>isArray</h3>
+<pre>isArray(value: <span class="identifier">any</span>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></pre>
+<div class="comment"><p>Determines whether an object is an Array.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <span class="identifier">any</span><br/><p>Value to test.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></dd>
+</dl>
+</div>
+<div id="isBoolean" class="member-panel mmethod">
+<h3>isBoolean</h3>
+<pre>isBoolean(value: <span class="identifier">any</span>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></pre>
+<div class="comment"><p>Determines whether an object is a Boolean.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <span class="identifier">any</span><br/><p>Value to test.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></dd>
+</dl>
+</div>
+<div id="isDate" class="member-panel mmethod">
+<h3>isDate</h3>
+<pre>isDate(value: <span class="identifier">any</span>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></pre>
+<div class="comment"><p>Determines whether an object is a Date.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <span class="identifier">any</span><br/><p>Value to test.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></dd>
+</dl>
+</div>
+<div id="isFunction" class="member-panel mmethod">
+<h3>isFunction</h3>
+<pre>isFunction(value: <span class="identifier">any</span>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></pre>
+<div class="comment"><p>Determines whether an object is a function.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <span class="identifier">any</span><br/><p>Value to test.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></dd>
+</dl>
+</div>
+<div id="isInt" class="member-panel mmethod">
+<h3>isInt</h3>
+<pre>isInt(value: <span class="identifier">any</span>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></pre>
+<div class="comment"><p>Determines whether an object is an integer.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <span class="identifier">any</span><br/><p>Value to test.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></dd>
+</dl>
+</div>
+<div id="isNullOrWhiteSpace" class="member-panel mmethod">
+<h3>isNullOrWhiteSpace</h3>
+<pre>isNullOrWhiteSpace(value: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></pre>
+<div class="comment"><p>Determines whether a string is null, empty, or whitespace only.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a><br/><p>Value to test.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></dd>
+</dl>
+</div>
+<div id="isNumber" class="member-panel mmethod">
+<h3>isNumber</h3>
+<pre>isNumber(value: <span class="identifier">any</span>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></pre>
+<div class="comment"><p>Determines whether an object is a number.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <span class="identifier">any</span><br/><p>Value to test.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></dd>
+</dl>
+</div>
+<div id="isObject" class="member-panel mmethod">
+<h3>isObject</h3>
+<pre>isObject(value: <span class="identifier">any</span>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></pre>
+<div class="comment"><p>Determines whether a value is an object
+(as opposed to a value type, an array, or a Date).</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <span class="identifier">any</span><br/><p>Value to test.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></dd>
+</dl>
+</div>
+<div id="isPrimitive" class="member-panel mmethod">
+<h3>isPrimitive</h3>
+<pre>isPrimitive(value: <span class="identifier">any</span>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></pre>
+<div class="comment"><p>Determines whether an object is a primitive type (string, number, boolean, or date).</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <span class="identifier">any</span><br/><p>Value to test.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></dd>
+</dl>
+</div>
+<div id="isString" class="member-panel mmethod">
+<h3>isString</h3>
+<pre>isString(value: <span class="identifier">any</span>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></pre>
+<div class="comment"><p>Determines whether an object is a string.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <span class="identifier">any</span><br/><p>Value to test.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></dd>
+</dl>
+</div>
+<div id="isUndefined" class="member-panel mmethod">
+<h3>isUndefined</h3>
+<pre>isUndefined(value: <span class="identifier">any</span>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></pre>
+<div class="comment"><p>Determines whether an object is undefined.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <span class="identifier">any</span><br/><p>Value to test.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a></dd>
+</dl>
+</div>
+<div id="mouseToPage" class="member-panel mmethod">
+<h3>mouseToPage</h3>
+<pre>mouseToPage(e: <span class="identifier">any</span>): <a href="topic/wijmo.Point.Class.html"><span class="identifier">Point</span></a></pre>
+<div class="comment"><p>Converts mouse or touch event arguments into a <a href="topic/wijmo.Point.Class.html"><span class="identifier">Point</span></a> in page coordinates.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>e</b>: <span class="identifier">any</span><br/></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="topic/wijmo.Point.Class.html"><span class="identifier">Point</span></a></dd>
+</dl>
+</div>
+<div id="moveFocus" class="member-panel mmethod">
+<h3>moveFocus</h3>
+<pre>moveFocus(parent: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a>, offset: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a>): <span class="identifier">void</span></pre>
+<div class="comment"><p>Moves the focus to the next/previous/first focusable child within
+a given parent element.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>parent</b>: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a><br/><p>Parent element.</p></li><li><b>offset</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a><br/><p>Offset to use when moving the focus (use zero to focus on the first focusable child).</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">void</span></dd>
+</dl>
+</div>
+<div id="removeClass" class="member-panel mmethod">
+<h3>removeClass</h3>
+<pre>removeClass(e: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a>, className: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a>): <span class="identifier">void</span></pre>
+<div class="comment"><p>Removes a class from an element.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>e</b>: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a><br/><p>Element that will have the class removed.</p></li><li><b>className</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a><br/><p>Class to remove form the element.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">void</span></dd>
+</dl>
+</div>
+<div id="setCss" class="member-panel mmethod">
+<h3>setCss</h3>
+<pre>setCss(e: <span class="identifier">any</span>, css: <span class="identifier">any</span>): <span class="identifier">void</span></pre>
+<div class="comment"><p>Modifies the style of an element by applying the properties specified in an object.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>e</b>: <span class="identifier">any</span><br/><p>Element or array of elements whose style will be modified.</p></li><li><b>css</b>: <span class="identifier">any</span><br/><p>Object containing the style properties to apply to the element.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">void</span></dd>
+</dl>
+</div>
+<div id="setSelectionRange" class="member-panel mmethod">
+<h3>setSelectionRange</h3>
+<pre>setSelectionRange(e: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLInputElement" target="_blank"><span class="identifier">HTMLInputElement</span></a>, start: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a>, end?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a>): <span class="identifier">void</span></pre>
+<div class="comment"><p>Sets the start and end positions of a selection in a text field.</p>
+<p>This method is similar to the native <a href="topic/wijmo.Module.html/#setSelectionRange"><span class="identifier">setSelectionRange</span></a> method
+in HTMLInputElement objects, except it checks for conditions that
+may cause exceptions (element not in the DOM, disabled, or hidden).</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>e</b>: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLInputElement" target="_blank"><span class="identifier">HTMLInputElement</span></a><br/></li><li><b>start</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a><br/><p>Offset into the text field for the start of the selection.</p></li><li><b>end</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a> <span class="badge">Optional</span><br/><p>Offset into the text field for the end of the selection.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">void</span></dd>
+</dl>
+</div>
+<div id="setText" class="member-panel mmethod">
+<h3>setText</h3>
+<pre>setText(e: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a>, text: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a>): <span class="identifier">void</span></pre>
+<div class="comment"><p>Sets the text content of an element.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>e</b>: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a><br/><p>Element that will have its content updated.</p></li><li><b>text</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a><br/><p>Plain text to be assigned to the element.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">void</span></dd>
+</dl>
+</div>
+<div id="showPopup" class="member-panel mmethod">
+<h3>showPopup</h3>
+<pre>showPopup(popup: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a>, ref?: <span class="identifier">any</span>, above?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>, fadeIn?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>, copyStyles?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>): <span class="identifier">void</span></pre>
+<div class="comment"><p>Shows an element as a popup.</p>
+<p>The popup element becomes a child of the body element,
+and is positioned above or below a reference rectangle, 
+depending on how much room is available.</p>
+<p>The reference rectangle may be specified as one of the following:</p>
+<p><dl class="dl-horizontal">
+  <dt>HTMLElement</dt>
+  <dd>The bounding rectangle of the element.</dd>
+  <dt>MouseEvent</dt>
+  <dd>The bounding rectangle of the event's target element.</dd>
+  <dt>Rect</dt>
+  <dd>The given rectangle.</dd>
+  <dt>null</dt>
+  <dd>No reference rectangle; the popup is centered on the window.</dd>
+</dl></p>
+<p>Call the <a href="topic/wijmo.Module.html/#hidePopup"><span class="identifier">hidePopup</span></a> method to hide the popup.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>popup</b>: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a><br/><p>Element to show as a popup.</p></li><li><b>ref</b>: <span class="identifier">any</span> <span class="badge">Optional</span><br/><p>Reference element or rectangle used to position the popup.</p></li><li><b>above</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a> <span class="badge">Optional</span><br/><p>Position popup above the reference rectangle if possible.</p></li><li><b>fadeIn</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a> <span class="badge">Optional</span><br/><p>Use a fade-in animation to make the popup appear gradually.</p></li><li><b>copyStyles</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a> <span class="badge">Optional</span><br/><p>Copy font and color styles from reference element.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">void</span></dd>
+</dl>
+</div>
+<div id="toFixed" class="member-panel mmethod">
+<h3>toFixed</h3>
+<pre>toFixed(value: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a>, prec: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a>, truncate: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a></pre>
+<div class="comment"><p>Rounds or truncates a number to a specified precision.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a><br/><p>Value to round or truncate.</p></li><li><b>prec</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a><br/><p>Number of decimal digits for the result.</p></li><li><b>truncate</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a><br/><p>Whether to truncate or round the original value.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><span class="identifier">number</span></a></dd>
+</dl>
+</div>
+<div id="toggleClass" class="member-panel mmethod">
+<h3>toggleClass</h3>
+<pre>toggleClass(e: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a>, className: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a>, addOrRemove?: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a>): <span class="identifier">void</span></pre>
+<div class="comment"><p>Adds or removes a class to or from an element.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>e</b>: <a href="https://developer.mozilla.org/en/docs/Web/API/HTMLElement" target="_blank"><span class="identifier">HTMLElement</span></a><br/><p>Element that will have the class added.</p></li><li><b>className</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a><br/><p>Class to add or remove.</p></li><li><b>addOrRemove</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank"><span class="identifier">boolean</span></a> <span class="badge">Optional</span><br/><p>Whether to add or remove the class. If not provided, the class is toggled.
+Use true to add class to element and false to remove class from element.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">void</span></dd>
+</dl>
+</div>
+<div id="toHeaderCase" class="member-panel mmethod">
+<h3>toHeaderCase</h3>
+<pre>toHeaderCase(text: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a>): <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a></pre>
+<div class="comment"><p>Converts a camel-cased string into a header-type string by capitalizing the first letter
+and adding spaces before uppercase characters preceded by lower-case characters.</p>
+<p>For example, 'somePropertyName' becomes 'Some Property Name'.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>text</b>: <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a><br/><p>String to convert to header case.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank"><span class="identifier">string</span></a></dd>
+</dl>
+</div>
+<div id="tryCast" class="member-panel mmethod">
+<h3>tryCast</h3>
+<pre>tryCast(value: <span class="identifier">any</span>, type: <span class="identifier">any</span>): <span class="identifier">any</span></pre>
+<div class="comment"><p>Casts a value to a type if possible.</p></div>
+<dl class="dl-horizontal">
+  <dt>Parameters</dt><dd></dd>
+</dl>
+<ul>
+<li><b>value</b>: <span class="identifier">any</span><br/><p>Value to cast.</p></li><li><b>type</b>: <span class="identifier">any</span><br/><p>Type or interface name to cast to.</p></li></ul>
+<dl class="dl-horizontal">
+  <dt>Returns</dt><dd><span class="identifier">any</span></dd>
+</dl>
+</div>
+</div>

@@ -10,6 +10,7 @@ import { UseCaseComponent } from './use-case/use-case.component';
 import { TechCoefficientComponent } from './tech-coefficient/tech-coefficient.component';
 import { EnviromentCoefficientComponent } from './enviroment-coefficient/enviroment-coefficient.component';
 import { SoftwareValueComponent } from './software-value/software-value.component';
+import { TotalCostComponent } from './total-cost/total-cost.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,7 @@ import { SoftwareValueComponent } from './software-value/software-value.componen
     TechCoefficientComponent,
     EnviromentCoefficientComponent,
     SoftwareValueComponent,
+    TotalCostComponent,
   ],
   imports: [
     BrowserModule,
